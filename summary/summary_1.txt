@@ -1,0 +1,64 @@
+Google: iGrid monitors the reliability of electric distribution.
+
+1. iGrid sells solar panel to household and then household sells (buys) electric to grid power. Right?
+
+2. Power gen process is from company itself or gathered from household?
+
+3. What does exactly battery do? 
+ idea: Use for storing for some several use without need for power generation. Is it compulsory?
+ 
+4. The issue of the price of electricity:
+ The source of generation may have varying cost.
+
+Luan: The process of electric gen from plant is hard to store -> Need 2 forecast.
+
+5. Percent in cloud: 100 % mean no electricty and 0% mean full sunny. Right?
+   What do exec date and target date mean?
+
+6. All data are recorded in same time zone?
+	
+7. The letter T in target_date means what? 
+
+8. THe exec date and target data has same or different time zone? What does it mean?
+
+9. Does the cloud are forecasted or measured?
+
+10. The weather data is not in order. -> Need ordering.
+
+11. What does consumption and regenerative power energy mean in file realne surplus 20220101_20221231.xlsx?
+ The second and third field: Regenerative and Power consumption meaning? (Column B & C).
+The timestamp is used in the GMT 0 and GMT + 9?
+
+ The energy predicted is the sum of the two columns B & C or each columns?
+	Take screenshot of it. 
+What does 30101 meaning in this file
+
+12. In realne_report_solar_30_v00001_20220301_20230228.
+ The field are 30001, 30011, 30021, 30031. Assume: It is the ID of 4 panels. The task is to forecast of power gen  of each panel and the total.
+ The energy of solar panel generated is for each cell or the sum of all cells? 
+ The timestamp is used in the GMT 0 and GMT + 9?
+
+
+ Regenerative: In daytime, there's no consumption from grid, use solar when able to.
+
+13. There is some time when solar energy is gen but just use from grid. (1/3/2022). Why?
+Assume: Use one model for each factory.
+
+Idea: Each plant has solar panel built. If the generation and demand is able to forecast, we can know the amount of grids we need.
+
+Idea: Each 48 target date corresponds to a single execution date.
+
+Idea: The plant is for consumption. The plant has a panel to have alternate source of electric.
+
+14. EDA for battery: Sum of electricity in each row.
+ (?) The value is the amount of electric stored or used? (or the number of energy stored in battery in the timestamp).
+ (?) The value is cummulative?
+ (?) Energy of 1 day is the sum of all rows of all columns?
+
+15. In solar_v00001, the P is the average within 30 and P at that exact timestamp?
+
+16. In weather_forecast_v00001, telop_code and telop_name meaning? 
+	Assume: The ID of the weather pattern.
+
+Task: Predict energy gen from the panel of each location.
+	Predict electric demand of each location. 

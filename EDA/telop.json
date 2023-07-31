@@ -1,0 +1,15 @@
+{
+    "0": "unknown",
+    "10": "sunny",
+    "21": "cloudy_partly",
+    "22": "cloudy",
+    "31": "rain_verylight",
+    "32": "rain_light",
+    "33": "rain",
+    "34": "rain_heavy",
+    "35": "rain_veryheavy",
+    "41": "sleet_weak",
+    "42": "sleet_strong",
+    "52": "snow_weak",
+    "53": "snow_strong"
+}
